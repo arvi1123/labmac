@@ -2,6 +2,10 @@
 <project name="Rectangle-Build" default="main" basedir=".">
   <property environment="env"/>
 
+  <presetdef name="javac">
+    <javac includeantruntime="false" />
+  </presetdef>
+  
   <!-- Sets variables which can later be used. -->
   <!-- The value of a property is accessed via ${} -->
   <property name="src.dir" location="src" />
